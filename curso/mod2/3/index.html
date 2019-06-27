@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+      <ul></ul>
+<body>
+    <script>
+        var nomes = ['Diego', 'Gabriel', 'Lucas'];
+        var lista = document.querySelector("ul");
+        for (nome of nomes) {
+            var liE = document.createElement("li");
+            var texto = document.createTextNode(nome);
+            liE.appendChild(texto);
+            lista.appendChild(liE);
+        }
+    </script>
+</body>
+
+</html>

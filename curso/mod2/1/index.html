@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<button id="botao">Clique no Botão</button>
+<div id="espaco"></div>
+
+<body>
+    <script>
+        var Botao = document.getElementById("botao");
+        var Espaco = document.getElementById("espaco");
+        Botao.onclick = function () {
+            var EspacoE = document.createElement("div");
+            EspacoE.style.backgroundColor = "#F00";
+            EspacoE.style.borderColor = "##000000";
+            EspacoE.style.width = "100px";
+            EspacoE.style.height = "100px";
+            EspacoE.style.borderStyle = "solid";
+            EspacoE.style.borderBottomWidth = "0.5px";
+            Espaco.appendChild(EspacoE);
+        };
+    </script>
+</body>
+
+</html>
